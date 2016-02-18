@@ -187,7 +187,7 @@
 /* Frequency of comprehensive reports-- lower values will provide more
  * info while slowing down the simulation. Higher values will give less
  * frequent updates. */
-#define REPORT_FREQUENCY (10 * TICK)
+//#define REPORT_FREQUENCY (10 * TICK)
 
 /* SDL refresh frequency */
 #define SDL_REFRESH_FREQUENCY (10 * TICK)
@@ -198,12 +198,12 @@
  * semi-human-readable if you look at the big switch() statement
  * in the main loop to see what instruction is signified by each
  * four-bit value. */
-#define DUMP_FREQUENCY (10000 * TICK)
+//#define DUMP_FREQUENCY (10000 * TICK)
 
 /* Mutation rate -- range is from 0 (none) to 0xffffffff (all mutations!) */
 /* To get it from a float probability from 0.0 to 1.0, multiply it by
  * 4294967295 (0xffffffff) and round. */
-#define MUTATION_RATE 21475 /* p=~0.000005 */
+#define MUTATION_RATE 214750000 /* p=~0.000005 */
 
 /* How frequently should random cells / energy be introduced?
  * Making this too high makes things very chaotic. Making it too low
@@ -234,7 +234,7 @@
 /* Define this to use SDL. To use SDL, you must have SDL headers
  * available and you must link with the SDL library when you compile. */
 /* Comment this out to compile without SDL visualization support. */
-//#define USE_SDL 1
+#define USE_SDL 1
 
 /* Define this to use a fixed random number seed.  Comment out to use
  * a time-based seed. */

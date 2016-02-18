@@ -203,7 +203,7 @@
 /* Mutation rate -- range is from 0 (none) to 0xffffffff (all mutations!) */
 /* To get it from a float probability from 0.0 to 1.0, multiply it by
  * 4294967295 (0xffffffff) and round. */
-#define MUTATION_RATE 21475 /* p=~0.000005 */
+#define MUTATION_RATE 2147500 /* p=~0.000005 */
 
 /* How frequently should random cells / energy be introduced?
  * Making this too high makes things very chaotic. Making it too low
@@ -234,7 +234,7 @@
 /* Define this to use SDL. To use SDL, you must have SDL headers
  * available and you must link with the SDL library when you compile. */
 /* Comment this out to compile without SDL visualization support. */
-//#define USE_SDL 1
+#define USE_SDL 1
 
 /* Define this to use a fixed random number seed.  Comment out to use
  * a time-based seed. */
